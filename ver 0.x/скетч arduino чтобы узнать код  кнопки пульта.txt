@@ -1,0 +1,49 @@
+Кнопки моего пульта от Вентилятора:
+кнопка 0:  FF4AB5
+кнопка 1:  FF6897
+кнопка 2:  FF9867
+кнопка 3:  FFB04F
+кнопка 4:  FF30CF
+кнопка 5:  FF18E7
+кнопка 6:  FF7A85
+кнопка 7:  FF10EF
+кнопка 8:  FF38C7
+кнопка 9:  FF5AA5
+кнопка *:  FF42BD
+кнопка #:  FF52AD
+кнопка OK: FF02FD
+кнопка ^:  FF629D
+кнопка v:  FFA857
+кнопка <:  FF22DD
+кнопка >:  FFC23D
+
+
+
+/*
+ * IRremote: IRrecvDemo - demonstrates receiving IR codes with IRrecv
+ * An IR detector/demodulator must be connected to the input RECV_PIN.
+ * Version 0.1 July, 2009
+ * Copyright 2009 Ken Shirriff
+ * http://arcfn.com
+ */
+
+#include <IRremote.h>
+
+int RECV_PIN = 11;
+
+IRrecv irrecv(RECV_PIN);
+
+decode_results results;
+
+void setup()
+{
+  Serial.begin(9600);
+  irrecv.enableIRIn(); // Start the receiver
+}
+
+void loop() {
+  if (irrecv.decode(&results)) {
+    Serial.println(results.value, HEX);
+    irrecv.resume(); // Receive the next value
+  }
+}
