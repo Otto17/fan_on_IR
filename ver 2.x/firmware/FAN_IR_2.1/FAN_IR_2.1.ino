@@ -37,7 +37,7 @@
   При необходимости изменить другие настройки и загрузить код.
 
 
-  Параметры платы в Arduino IDE (MiniCore v. 2.2.1):
+  Параметры платы в Arduino IDE (MiniCore v. 3.1.2):
   1) Плата: MiniCore -> "ATmega48" или "ATmega8"
   2) BOD: BOD 4.3V (для ATmega8 4.0V)
   3) Bootloader: No bootloader

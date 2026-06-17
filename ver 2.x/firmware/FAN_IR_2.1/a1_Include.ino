@@ -1,7 +1,7 @@
 /*** БИБЛИОТЕКИ ***/
 #include <TimerMs.h>     // Многофункциональный программный таймер на системном таймере millis() "https://github.com/GyverLibs/TimerMs" [используется ver. 1.2]
-#include <SoftServo.h>   // Библиотека для программного управления Servo (на базе millis/micros) "https://github.com/GyverLibs/SoftServo" [используется ver. 1.2]
-#include <NecDecoder.h>  // Лёгкая библиотека для декодирования ИК протокола NEC "https://github.com/GyverLibs/NecDecoder" [используется ver. 2.1]
+#include <SoftServo.h>   // Библиотека для программного управления Servo (на базе millis/micros) "https://github.com/GyverLibs/SoftServo" [используется ver. 2.0]
+#include <NecDecoder.h>  // Лёгкая библиотека для декодирования ИК протокола NEC "https://github.com/GyverLibs/NecDecoder" [используется ver. 3.0.3]
 #include <EEPROM.h>      // Библиотека для работы с энергонезависимой памятью EEPROM [входит в состав ядра MiniCore]
 
 
